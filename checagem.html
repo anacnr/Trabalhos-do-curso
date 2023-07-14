@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt -BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de checagem</title>
+    <style>
+
+
+        th{
+            padding: 2px;
+            width: 100px;
+            height: 80px;
+            text-transform: capitalize;
+            vertical-align: top;
+            padding-top: 35px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table{
+            width: 700px;
+            height: 220px;
+            border-collapse: collapse;
+            margin: auto;
+            position:fixed ;
+        }
+
+        td{
+            border: 1px solid rgba(128, 128, 128, 0.625);
+            height: 30px;
+            text-transform: capitalize;
+            padding-top: 2px;
+            padding-right: 15px;
+            padding-bottom: 2px;
+            padding-left: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: smaller;
+            color: rgba(75, 73, 73, 0.784);
+        }
+
+        button{
+            vertical-align: bottom;
+            width: 84px;
+            height: 30px;
+            font-size: 7px;
+            text-transform: uppercase;
+            background-color: transparent;
+            border-radius: 3px;
+            border-style: solid;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+
+        .verde{
+            text-align: center;
+            color: #71DA6E;
+        }
+
+        .cinza{
+            text-align: center;
+            color: rgba(70, 70, 70, 0.825);
+        }
+
+        #registro{
+            position: relative;
+            transform: translate(300%, 340%);
+        }
+
+        #envio{
+            position: relative;
+            transform: translate(535px, 340%);
+            color: #ACC6EF;
+            border-color: #ACC6EF;
+        }
+    </style>
+</head>
+<body>
+    <!--Criar tabelas baseadas nos exemplos que estão no slide da tabela no classroom-->
+    <!--O emoji de verificar eu encontrei no site emojipedia.org-->
+    <table>
+
+        <thead>
+            <tr>
+                <!--Cabeçalho da tabela--> <th></th>
+                <th style="color:#71DA6E; border: 1px solid grey;"> platform </th> <th style="background-color: #2F2F5A; color: #ACC6EF;"> enterprise </th> 
+                <button style="color: #71DA6E; border-color: #71DA6E;" id="registro">register now</button>
+                <button id="envio">send us a email</button>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!--Primeira linha-->
+            <tr>
+                <td>instant delivery</td> <td class="verde"> &#x2714</td> <td class="cinza"> &#x2714</td>
+            </tr>
+
+            <!--Segunda linha-->
+            <tr>
+                <td>personal contact person</td> <td class="verde"> &#x2714</td> <td class="cinza"> &#x2714</td>
+            </tr>
+
+            <!--Terceira linha-->
+            <tr>
+                <td>pat only fir what you use</td> <td class="verde"> &#x2714</td> <td class="cinza"> &#x2714</td>
+            </tr>
+
+            <!--Quarta linha-->
+            <tr>
+                <td>real-time fee reporting</td> <td class="verde"> &#x2714</td> <td class="cinza"> &#x2714</td>
+            </tr>
+
+            <!--Quinta linha-->
+            <tr>
+                <td>volume discounts</td> <td></td> <td class="cinza"> &#x2714</td>
+            </tr>
+
+            <!--Sexta linha-->
+            <tr>
+                <td>account management</td> <td></td> <td class="cinza"> &#x2714</td>
+            </tr>
+
+            <!--Sétima linha-->
+            <tr>
+                <td>management assistance</td> <td></td> <td class="cinza"> &#x2714</td>
+            </tr>
+
+            <!--Última linha-->
+            <tr>
+                <td>24/7 support</td> <td></td> <td class="cinza"> &#x2714</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>

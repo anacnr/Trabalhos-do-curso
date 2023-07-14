@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt -BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com título</title>
+    <style>
+        caption{
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10%;
+            margin-bottom: 4%;
+        }
+
+        thead{
+            background-color:#8C4BFB /* #6807F9*/;
+            height: 60px;
+        }
+
+        th{
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            text-transform: capitalize;
+            cursor: context-menu;
+        }
+
+        table{
+            width: 600px;
+            height: 200px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td{
+            text-align: center;
+            width: 60px;
+            height: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            border-top: 1px solid rgba(128, 128, 128, 0.137);
+            cursor: context-menu;
+        }
+
+        tbody > tr >td:nth-child(2n-1){
+            background-color: #EEF0F3;
+        }
+
+        /*Efeito de animação do botão com o tamanho aumentado inspirado em outras aplicações*/
+
+        button{
+            background-color: #6807F9;
+            border: none;
+            height: 25px;
+            width: 55px;
+            font-size: 9px;
+            text-transform: capitalize;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover{
+
+            animation-name: botao;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes botao {
+            from{
+                transform: scale(97%);
+            }
+            to{
+                transform: scale(105%);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>create your domain name</caption>
+
+        <thead>
+            <!--Cabeçalho da tabela-->
+            <tr>
+                <th>TLD</th> <th>duration</th> <th>registration</th> <th>renewal</th> <th>transfer</th> <th>register</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!--Corpo da tabela.-->
+
+            <!--Primeira linha-->
+            <tr>
+                
+                <td style="font-weight: bold;">.com </td> <td>1year </td> <td>$70.00 </td> <td>$5.00 </td> <td>$5.00 </td> <td><button>sign up</button></td>
+            </tr>
+
+            <tr>
+                <!--Segunda linha-->
+                <td style="font-weight: bold;">.net </td> <td>1year </td> <td>$75.00 </td> <td>$5.00 </td> <td>$5.00 </td> <td><button>sign up</button></td>
+            </tr>
+
+            <!--Terceira linha-->
+            <tr>
+                <td style="font-weight: bold;">.org </td> <td>1year </td> <td>$65.00 </td> <td>$5.00 </td> <td>$5.00 </td> <td><button>sign up</button></td>
+            </tr>
+
+            <!--Quarta linha-->
+            <tr>
+                <td style="font-weight: bold;">.blz </td> <td>1year </td> <td>$60.00 </td> <td>$5.00 </td> <td>$5.00 </td> <td><button>sign up</button></td>
+            </tr>
+            <!--Última linha-->
+            <tr>
+                <td style="font-weight: bold;">.info </td> <td>1year </td> <td>$50.00 </td> <td>$5.00 </td> <td>$5.00 </td> <td><button>sign up</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt -BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela colorida</title>
+    <style>
+
+        table {
+            border-collapse: collapse;
+            width: 570px;
+            height: 200px;
+            /*position: relative;
+            transform: translate(-5% , 50%);*/
+            margin: auto;
+            margin-top: 6%;
+            cursor: context-menu;
+        }
+
+        thead{
+            background-color:#E4E4E4;
+            color: black;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            height: 33px;
+            border: none;
+        }
+
+        td {
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        thead > tr > th:nth-child(odd){
+            background-color: #000000;
+            color: white;
+        }
+
+        thead > tr > th:nth-child(even){
+            background-color: #91F518;
+            color: black;
+        }
+
+        /*Efeito do elemento indo para frente isnpirado em outras aplicações*/
+
+        th:hover{
+            animation-name: frente;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+        @keyframes frente {
+            from{
+                transform: scale(90%);
+            }
+            to{
+                transform: scale(100%);
+            }
+        }
+
+        tbody> tr > .cor:nth-child(2n-1){
+            background-color: #000000;
+            color: white;
+        }
+
+        tbody >tr > .diferente:nth-child(2n){
+            background-color: #6a6a6a1e;
+            color: black;
+        }
+
+        /*tbody > tr > td:nth-child(2n){
+            background-color: #000000;
+            color: white;
+        }
+        tbody > tr >:nth-child(2n-1){
+            background-color: #FFFFFF;
+        }
+
+        Não funcionou!*/
+
+        tfoot{
+            color: black;
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+        <body>
+                <table>
+                <!--Criar tabelas baseadas nos exemplos que estão no slide da tabela no classroom-->
+                    <thead>
+                        <!--Cabeçalho da tabela-->
+                        <tr>
+                            <th>collumm 1</th> <th> collumm 2</th> <th> collumm 3</th> <th> collumm 4</th>
+                        </tr>
+                        
+                        </thead>
+                        <tbody>
+                            <!--Primeira linha-->
+                            <tr>
+                                <td> Item #1</td> <td> description</td> <td> discount:</td> <td> $1.00</td>
+                            </tr>
+                            <!--Segunda linha-->
+                            <tr>
+                                <td class="cor">item #2</td> <td class="diferente"> description</td> <td class="cor"> discount:</td> <td class="diferente"> $2.00</td>
+                            </tr>
+                            <!--Terceira linha-->
+                            <tr>
+                                <td>item #3</td> <td> description</td> <td> discount:</td> <td> $3.00</td>
+                            </tr>
+                            <!--Quarta linha-->
+                            <tr>
+                                <td class="cor">item #3</td> <td class="diferente"> description</td> <td class="cor"> discount:</td> <td class="diferente"> $4.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td> all itens</td> <td> description</td> <th scope="row"> your total:</th> <td> $10.00</td>
+                            </tr>
+                        </tfoot>
+                </table>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt -BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela dos Planos</title>
+    <style>
+
+        body{
+            background-color: white;
+        }
+
+        table{
+            margin: 2%;
+            width: 600px;
+            height: 200px;
+            margin: auto;
+        }
+
+        caption{
+        text-transform: capitalize;
+        margin-top: 10%;
+        margin-bottom: 3%;
+        cursor: context-menu;
+        }
+
+        thead{
+            width: 50px;
+            height: 35px;
+            color: white;
+            cursor: context-menu;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: #E4E4E4;
+        }
+
+        tbody {
+            text-align: center;
+            cursor: context-menu;
+        }
+
+        tfoot{
+            text-align: center;
+        }
+
+        button{
+            padding: 2px;
+            width: 100px;
+            height: 30px;
+            margin-top: 2%;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        p{
+            text-align: center;
+            padding-right: 90px;
+            padding-left: 90px;
+        }
+    </style>
+</head>
+<body>
+    <!--Criar tabelas baseadas nos exemplos que estão no slide da tabela no classroom-->
+    <table>
+        <caption>pricing plans</caption>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam corporis consequatur officiis a distinctio minus alias architecto culpa, tempore ipsam, sapiente molestias temporibus quas ducimus. Est aspernatur odit tempore praesentium!</p>
+
+        <thead>
+            <!--Cabeçalho da tabela-->
+            <tr>
+                <th style="background-color: #E48284;">Plan 1</th> <th style="background-color: #DB535A;"> Plan 2</th> <th style="background-color: #CF2140;"> Plan 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!--Corpo da tabela. Vai estar os dados das células-->
+
+            <!--Primeira linha-->
+            <tr>
+                
+                <td> 10 Gb</td> <td> 15 Gb</td> <td> 20 Gb</td>
+            </tr>
+
+            <tr>
+                <!--Segunda linha-->
+                <td>2 </td> <td> 5</td> <td> Unlimited</td>
+            </tr>
+
+            <!--Terceira linha-->
+            <tr>
+                <td> Free Trial</td> <td> Free Trial</td> <td> Free Trial</td>
+            </tr>
+
+            <!--Quarta linha-->
+            <tr>
+                <td> 9.99$</td> <td> 19.99$</td> <td> 39.99$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!--Última linha-->
+            <tr>
+                <td><button style="background-color: #E48284;">Purchase</button></td>
+                <td><button style="background-color: #DB535A;">Purchase</button></td>
+                <td><button style="background-color: #CF2140;">Purchase</button></td>
+            </tr>
+            </tfoot>
+    </table>
+</body>
+</html>

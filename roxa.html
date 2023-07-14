@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt -BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela roxa</title>
+    <style>
+
+        table {
+            border-collapse: collapse;
+            width: 570px;
+            height: 200px;
+            /*position: relative;
+            transform: translate(-5% , 50%);*/
+            margin: auto;
+            margin-top: 6%;
+        }
+
+        thead{
+            background-color:#E4E4E4;
+            color: black;
+            font-size: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+            height: 33px;
+            border: none;
+        }
+
+        td {
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: #8C7FE1;
+            color: white;
+        }
+
+        tfoot{
+            color: black;
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+        <body>
+                <table>
+                <!--Criar tabelas baseadas nos exemplos que estão no slide da tabela no classroom-->
+                    <thead>
+                        <!--Cabeçalho da tabela-->
+                        <tr>
+                            <th>collumm 1</th> <th> collumm 2</th> <th> collumm 3</th> <th> collumm 4</th>
+                        </tr>
+                        
+                        </thead>
+                        <tbody>
+                            <!--Primeira linha-->
+                            <tr>
+                                <td> Item #1</td> <td> description</td> <td> discount:</td> <td> $1.00</td>
+                            </tr>
+                            <!--Segunda linha-->
+                            <tr>
+                                <td>item #2</td> <td> description</td> <td> discount:</td> <td> $2.00</td>
+                            </tr>
+                            <!--Terceira linha-->
+                            <tr>
+                                <td>item #3</td> <td> description</td> <td> discount:</td> <td> $3.00</td>
+                            </tr>
+                            <!--Quarta linha-->
+                            <tr>
+                                <td>item #3</td> <td> description</td> <td> discount:</td> <td> $4.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td> all itens</td> <td> description</td> <th scope="row"> your total:</th> <td> $10.00</td>
+                            </tr>
+                        </tfoot>
+                </table>
+</body>
+</html>

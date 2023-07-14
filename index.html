@@ -2,63 +2,156 @@
 <html lang="pt -BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo</title>
+    <title>Tabela de Template</title>
     <style>
+
         body{
-          background-color: rgba(251, 242, 230, 0.838);
-          text-align: center;
+            background-color: white;
         }
+
         h1{
-            margin-top: 7%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
             text-align: center;
-            font-size: 3em;
-            font-weight: bolder;
-        }
-
-        h2{
-            padding-left: 22%;
-            margin: auto;
-           text-align: left;
-        }
-
-        #contato{
-         margin-bottom: 2%;
-         display: flex;
-         line-height: 140%;
+            text-transform: capitalize;
+            margin-top: 5%;
         }
 
         p{
-            padding-left: 22%;
-            text-align: left;
+            text-align: center;
+            font-weight: lighter;
+            padding-right: 150px;
+            padding-left: 150px;
         }
-        footer{
-            padding-top: 2%;
+
+        table{
+            /*border: 2px solid rgba(0, 0, 0, 0.178);
+            Quando eu botei essa shorthand como comentário escondeu a primeira célula da tabela*/
+            border-collapse: collapse;
+            width: 620px;
+            height: 180px;
+            margin: auto;
+        }
+
+        th{
+            height: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+        }
+
+        td{
+            border: 2px solid rgba(0, 0, 0, 0.178);
+            
+        }
+
+        .dolar{
+            width: 120px;
+            height: 20px;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            cursor: context-menu;
+        }
+
+        .centro{
+            text-align: center;
+            padding: 4px;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            width:150px;
+            cursor: context-menu;
+        }
+
+        button{
+            background-color:#D9D9D9 ;
+            text-transform: uppercase;
+            border: none;
+            font-size: 7px;
+            width: 60px;
+            height: 20px;
+            margin: 2%;
+            cursor: pointer;
+        }
+
+        tfoot{
+            text-align: center;
+        }
+
+        .coluna{
+            padding: 1%;
+            text-align: left;
+            cursor: context-menu;
+        }
+
+        .cabeçalho{
+            border: 2px solid rgba(0, 0, 0, 0.178);
+            cursor: context-menu;
         }
     </style>
 </head>
 <body>
-    <!--Fazer um currículo-->
-    <h1>ANA C N R</h1>
+     <!--Criar tabelas baseadas nos exemplos que estão no slide da tabela no classroom-->
 
-    <p id="contato">Rio Grande do Norte, Brasil <br>
-    &#x1F4F1 84 00000-0000
-    &#x1F4E7 anacnrteste@gmail.com <br>
-    GitHub: @anacnr</p>
+     <h1>pricing table template</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rerum animi ab cum et voluptate dicta sint necessitatibus nam maiores hic sapiente, beatae quas quaerat, rem quia ad itaque excepturi.</p>
+     <table>
 
-    <h2>Objetivo</h2>
-    <p> Desenvolvimento Front-End para jogos digitais. </p>
+        <thead>
+            <!--Cabeçalho da tabela-->
+            <tr>
+             <th></th>  <th class="cabeçalho"> Basic</th> <th class="cabeçalho"> Standart</th> <th class="cabeçalho"> Advanced</th>
+            </tr>
+        </thead>
 
-    <h2>Cursos</h2>
-    <p>Curso Técnico em Informática <br> Cursando <br> Grau Técnico</p>
-    <p>Curso de JavaScript <br> 2023 <br> Curso em Vídeo</p>
-    <p>Inglês básico <br> 2022 <br> Pensar Cursos</p>
+        <tbody>
+            <!--Corpo da tabela. Vai estar os dados das células-->
 
-    <h2>Experiência profissional</h2>
-    <p>Não tenho experiência na carteira de trabalho nesta área.</p>
-    <footer>
-        <p>Currículo feito para aula com emojis referentes ao contato inspirado em outros currículos.</p>
-    </footer>
+            <!--Primeira linha-->
+            <tr>
+               
+                <td style="width:150px; height: 30px;" class="coluna"> Monthly price</td> <td class="dolar" style="background-color:#6FCD72 ;"> $ 29</td> <td class="dolar" style="background-color: #39BBF4;">$ 59</td> <td class="dolar" style="background-color: #E35067;"> $ 139</td>
+              
+            </tr>
+
+            <tr>
+                <!--Segunda linha-->
+              <td class="coluna"> Storage</td> <td class="centro"> 1 Gb</td> <td class="centro"> 10 Gb</td> <td class="centro"> 20 Gb</td> 
+            </tr>
+
+            <!--Terceira linha-->
+            <tr>
+              
+                <td class="coluna"> People</td> <td class="centro"> 2</td> <td class="centro"> 20</td> <td class="centro"> Unlimited</td> 
+            </tr>
+
+            <!--Quarta linha-->
+            <tr>
+                <td class="coluna">Cups of coffee</td> <td class="centro"> 10</td> <td class="centro">15</td> <td class="centro"> 45</td>
+            </tr>
+            <tr>
+
+                <!--Quinta linha-->
+                <td class="coluna"> 24/7 support</td> <td></td> <td></td> <td></td>
+            </tr>
+            
+            <!--Sexta linha-->
+
+            <tr>
+
+                <td class="coluna"> Consultation</td> <td></td> <td></td> <td></td>
+            </tr>
+
+        <tfoot>
+            <!--Última linha. Pé da tabela-->
+            <tr>
+                <td></td>
+                <td><button>Get plan</button></td>
+                <td><button>get plan</button></td>
+                <td><button>get plan</button></td>
+            </tr>
+            </tfoot>
+    </table>
 </body>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt -BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela amarela</title>
+    <style>
+
+        table {
+            background-color: #F0C50D;
+            border-collapse: collapse;
+            width: 570px;
+            height: 200px;
+            /*position: relative;
+            transform: translate(-5% , 50%);*/
+            margin: auto;
+        }
+
+        thead{
+            background-color: black;
+            color: white;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            height: 33px;
+            border: none;
+        }
+
+        td {
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: #F2D554;
+        }
+
+        div{
+            background-color: #F0C50D;
+            /*position: relative;
+            transform: translate(-5% , 50%);*/
+            width: 640px;
+            height: 260px;
+            display: flex;
+            margin: auto;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+        <body>
+            <div>
+                <table>
+                <!--Criar tabelas baseadas nos exemplos que estão no slide da tabela no classroom-->
+                    <thead>
+                        <!--Cabeçalho da tabela-->
+                        <tr>
+                            <th>collumm 1</th> <th> collumm 2</th> <th> collumm 3</th> <th> collumm 4</th>
+                        </tr>
+                        
+                        </thead>
+                        <tbody>
+                            <!--Primeira linha-->
+                            <tr>
+                                <td> Item #1</td> <td> description</td> <td> description</td> <td> description</td>
+                            </tr>
+                            <!--Segunda linha-->
+                            <tr>
+                                <td>item #2</td> <td> description</td> <td> description</td> <td> description</td>
+                            </tr>
+                            <!--Terceira linha-->
+                            <tr>
+                                <td>item #3</td> <td> description</td> <td> description</td> <td> description</td>
+                            </tr>
+                            <!--Quarta linha-->
+                            <tr>
+                                <td>item #3</td> <td> description</td> <td> description</td> <td> description</td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt -BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela cinza</title>
+    <style>
+
+        table {
+            background-color: #B9C0CB;
+            border-collapse: collapse;
+            width: 570px;
+            height: 200px;
+            /*position: relative;
+            transform: translate(-5% , 50%);*/
+            margin: auto;
+        }
+
+        thead{
+            color: black;
+            font-size: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            height: 33px;
+            border: none;
+            font-weight: bolder;
+        }
+
+        td {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: #CAD2DA;
+        }
+
+        div{
+            background-color: #B9C0CB;
+            /*position: relative;
+            transform: translate(-5% , 50%);*/
+            width: 640px;
+            height: 300px;
+            display: flex;
+            margin: auto;
+            margin-top: 5%;
+        }
+
+        .pintado{
+            background-color: black;
+            height: 50px;
+            width: 50px;
+            color: white;
+        }
+
+        .texto{
+            text-transform: capitalize;
+        }
+
+        .maiuscula{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+        <body>
+            <div>
+                <table>
+                <!--Criar tabelas baseadas nos exemplos que estão no slide da tabela no classroom-->
+                    <thead>
+                        <!--Cabeçalho da tabela-->
+                        <tr>
+                            <th></th> <th> name, e-mail</th> <th> code</th> <th> designation</th> <th> phone</th> <th> joining date</th>
+                        </tr>
+                        
+                        </thead>
+                        <tbody>
+                            <!--Primeira linha-->
+                            <tr>
+                                <td class="pintado"> 1</td> <td>Josh Anderson, <br> josh-info@gmail.com</td> <td class="maiuscula"> su030</td> <td class="texto"> developer</td> <td> + 1 222 33 44</td> <td class="texto"> mar 27,2005</td>
+                            </tr>
+                            <!--Segunda linha-->
+                            <tr>
+                                <td class="pintado">2</td> <td>Lina Hudsin, <br> lina-h@gmail.com</td> <td class="maiuscula">su031</td> <td class="texto"> designer</td> <td> + 1 222 34 43</td> <td class="texto">dec 12,2007</td>
+                            </tr>
+                            <!--Terceira linha-->
+                            <tr>
+                                <td class="pintado">3</td> <td>Mike Henderson, <br> mike12@gmail.com</td> <td class="maiuscula">su032</td> <td class="texto"> manager</td> <td> +1 222 54 45</td> <td class="texto"> apr 23,2001</td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+</body>
+</html>
